@@ -1,0 +1,43 @@
+.form {
+  width: fit-content;
+  margin: 5px;
+  padding: 7px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: auto;
+}
+.input-ac {
+  margin: 0.5em;
+  margin-left: 0;
+  padding: 1em;
+  display: block;
+  width: 333px;
+}
+.label-ac {
+  display: block;
+  margin: 0.1em;
+  padding: 0.5em;
+}
+.btn-add {
+  width: 90%;
+  padding: 1em;
+  float: inline-end;
+  margin: 1em;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+@media all and (max-width: 400px) {
+  .input-ac,
+  .btn-add {
+    width: 100%;
+  }
+  .btn-add {
+    float: inline-start;
+  }
+}

@@ -1,0 +1,48 @@
+.div-li {
+  display: inline-grid;
+}
+.input-r {
+  margin: 0.5em;
+  margin-left: 0;
+  padding: 1em;
+  display: block;
+  overflow: scroll;
+}
+
+/* Ensure number inputs match the theme (App.css defines --input-bg and --text) */
+input[type="number"].input-r,
+.input-r[type="number"],
+input[type="number"] {
+  background: var(--input-bg);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 10px;
+  outline: none;
+  transition: box-shadow .12s, border-color .12s;
+}
+
+input[type="number"]:focus,
+.input-r:focus {
+  border-color: var(--accent);
+  box-shadow: 0 8px 28px rgba(124,92,255,0.10);
+}
+.label-r {
+  margin: 0.1em;
+  padding: 0.5em;
+  display: block;
+}
+.btn-add {
+  width: 50%;
+  padding: 1em;
+  float: inline-end;
+  margin: 1em;
+}
+.note {
+  width: 90%;
+  padding: 11px;
+  padding-left: 1px;
+  text-align: justify;
+  max-height: 111px;
+  overflow: auto;
+  line-height: 1.5em;
+}

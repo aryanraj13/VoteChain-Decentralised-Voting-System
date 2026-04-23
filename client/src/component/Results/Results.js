@@ -81,10 +81,8 @@ export default class Result extends Component {
       this.setState({ candidates: this.state.candidates });
 
       // Admin account and verification
-      const admin = await this.state.ElectionInstance.methods.getAdmin().call();
-      if (this.state.account === admin) {
-        this.setState({ isAdmin: true });
-      }
+      const isAdmin = await instance.methods.isAdmin(this.state.account).call();
+this.setState({ isAdmin });
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(

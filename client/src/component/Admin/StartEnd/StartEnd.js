@@ -53,10 +53,8 @@ export default class StartEnd extends Component {
       });
 
       // Admin info
-      const admin = await this.state.ElectionInstance.methods.getAdmin().call();
-      if (this.state.account === admin) {
-        this.setState({ isAdmin: true });
-      }
+      const isAdmin = await instance.methods.isAdmin(this.state.account).call();
+this.setState({ isAdmin });
 
       // Get election start and end values
       const start = await this.state.ElectionInstance.methods.getStart().call();

@@ -1,0 +1,11 @@
+.log-container {
+  padding: 30px;
+  color: white;
+}
+
+.log-card {
+  background: #111827;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}

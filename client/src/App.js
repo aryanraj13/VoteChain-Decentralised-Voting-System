@@ -10,11 +10,12 @@ import Registration from "./component/Registration/Registration";
 import AddCandidate from "./component/Admin/AddCandidate/AddCandidate";
 import Verification from "./component/Admin/Verification/Verification";
 import test from "./component/test";
+import AdminManager from "./component/Admin/AdminManager/AdminManager";
+import AdminLogs from "./component/Admin/AdminLogs/AdminLogs";
 // import StartEnd from "./component/Admin/StartEnd/StartEnd";
 
-import Footer from "./component/Footer/Footer";
-
 import "./App.css";
+import Dashboard from "./component/Dashboard";
 
 export default class App extends Component {
   render() {
@@ -23,11 +24,14 @@ export default class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/admin-manager" component={AdminManager} />
             <Route exact path="/AddCandidate" component={AddCandidate} />
             <Route exact path="/Voting" component={Voting} />
             <Route exact path="/Results" component={Results} />
             <Route exact path="/Registration" component={Registration} />
             <Route exact path="/Verification" component={Verification} />
+            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/admin-logs" component={AdminLogs} />
             <Route exact path="/test" component={test} />
             <Route exact path="*" component={NotFound} />
           </Switch>

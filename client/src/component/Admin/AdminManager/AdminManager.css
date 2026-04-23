@@ -1,0 +1,45 @@
+.admin-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #111827;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+.admin-container input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: none;
+  background: #0f172a;
+  color: white;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.btn-group button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: #6d5dfc;
+  color: white;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.role-tag {
+  margin-top: 10px;
+  color: #22c55e;
+}

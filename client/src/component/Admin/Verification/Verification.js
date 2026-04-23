@@ -55,10 +55,8 @@ export default class Registration extends Component {
       this.setState({ candidateCount: candidateCount });
 
       // Admin account and verification
-      const admin = await this.state.ElectionInstance.methods.getAdmin().call();
-      if (this.state.account === admin) {
-        this.setState({ isAdmin: true });
-      }
+      const isAdmin = await instance.methods.isAdmin(this.state.account).call();
+this.setState({ isAdmin });
       // Total number of voters
       const voterCount = await this.state.ElectionInstance.methods
         .getTotalVoter()

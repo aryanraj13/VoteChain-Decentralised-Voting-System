@@ -12,6 +12,11 @@ export default function NavbarAdmin() {
       </div>
       <ul className="navbar-links">
         <li>
+          <NavLink to="/admin-manager" activeClassName="nav-active">
+            Admin Panel
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/Verification" activeClassName="nav-active">
             Verification
           </NavLink>
@@ -32,8 +37,18 @@ export default function NavbarAdmin() {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/Dashboard" activeClassName="nav-active">
+            Dashboard
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/Results" activeClassName="nav-active">
             Results
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/admin-logs" activeClassName="nav-active">
+            Logs
           </NavLink>
         </li>
       </ul>

@@ -60,10 +60,8 @@ export default class AddCandidate extends Component {
         .call();
       this.setState({ candidateCount: candidateCount });
 
-      const admin = await this.state.ElectionInstance.methods.getAdmin().call();
-      if (this.state.account === admin) {
-        this.setState({ isAdmin: true });
-      }
+      const isAdmin = await instance.methods.isAdmin(this.state.account).call();
+this.setState({ isAdmin });
 
       // Loading Candidates details
       for (let i = 0; i < this.state.candidateCount; i++) {

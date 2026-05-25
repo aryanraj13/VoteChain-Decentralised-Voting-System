@@ -1,9 +1,7 @@
 # 📌 VoteChain – Decentralised Voting System
 *A Blockchain-Based Secure & Transparent Voting Application*
 
-<video width="700" controls>
-  <source src="./demo.mp4" type="video/mp4">
-</video>
+[![Watch Demo](client/public/thumbnail.jpg)](./demo.mp4)
 
 ## 🚀 Overview
 **VoteChain** is a decentralized voting system built on the **Ethereum blockchain** using **Solidity, Truffle, Ganache, React, Web3.js, and MetaMask**.  
